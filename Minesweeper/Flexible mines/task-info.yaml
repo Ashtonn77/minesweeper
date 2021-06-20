@@ -94,6 +94,15 @@ files:
         }
     }
   learner_created: false
+- name: src/minesweeper/MineField.java
+  visible: true
+  learner_created: true
+- name: src/minesweeper/Game.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/77/stages/427/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 20 Jun 2021 09:02:53 UTC
 record: -1

@@ -1,2 +1,6 @@
+minesweeper/Game.java
+ minesweeper.Game
+minesweeper/MineField.java
+ minesweeper.MineField
 minesweeper/Main.java
  minesweeper.Main
