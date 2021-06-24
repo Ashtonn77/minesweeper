@@ -1,7 +1,5 @@
 package minesweeper;
 
-import java.util.SortedMap;
-
 public class MineField {
     
     private char[][] field;

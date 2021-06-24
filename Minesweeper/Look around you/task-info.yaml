@@ -143,6 +143,36 @@ files:
         }
     }
   learner_created: false
+- name: src/minesweeper/MineField.java
+  visible: true
+  text: "package minesweeper;\n\nimport java.util.SortedMap;\n\npublic class MineField\
+    \ {\n    \n    private char[][] field;\n    final int ROW = 9;\n    final int\
+    \ COL = 9;\n    \n    public MineField(){\n        \n        field = new char[ROW][COL];\n\
+    \        for(int i = 0; i < ROW; i++)\n            for(int j = 0; j < COL; j++)\n\
+    \                field[i][j] = '.';\n            \n        \n    }\n    \n   \
+    \ public char[][] getField() { return field; }\n    \n    public void print(){\n\
+    \n        for(int i = 0; i < ROW; i++) {\n            for (int j = 0; j < COL;\
+    \ j++)\n                System.out.print(field[i][j]);\n\n            System.out.println(\"\
+    \");\n        }    \n            \n    }\n    \n}\n"
+  learner_created: true
+- name: src/minesweeper/Game.java
+  visible: true
+  text: "package minesweeper;\n\nimport java.util.Random;\nimport java.util.Scanner;\n\
+    \npublic class Game {\n    \n    MineField mineField;\n    \n    public Game(MineField\
+    \ mineField){\n        this.mineField = mineField;\n    }\n    \n    void play(){\n\
+    \n        Scanner in = new Scanner(System.in);\n        System.out.println(\"\
+    How many mines do you want on the field?\");\n        int n = in.nextInt();\n\
+    \        \n        while(n > 0){\n\n            Random random = new Random();\n\
+    \            int row = random.nextInt(9);\n            int col = random.nextInt(9);\n\
+    \            \n            if(mineField.getField()[row][col] == '.'){\n      \
+    \         \n                mineField.getField()[row][col] = 'X';\n          \
+    \      n--;\n                \n            }\n                        \n     \
+    \   }\n        \n        mineField.print();\n                \n    }\n    \n \
+    \   \n}\n"
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/77/stages/428/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 24 Jun 2021 11:02:15 UTC
 record: -1
